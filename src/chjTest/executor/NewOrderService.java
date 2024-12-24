@@ -30,9 +30,10 @@ public class NewOrderService {
         } else {
             log("일부 작업이 실패했습니다.");
         }
+    }
 
-        // 추가: 종료
-        es.shutdown();
+    public void close() {
+        es.close();
     }
 
     static class InventoryWork implements Callable<Boolean> {

@@ -8,6 +8,7 @@ public class NewOrderServiceTestMain {
 
         String orderNo = "Order#1234";  // 예시 주문 번호
         NewOrderService orderService = new NewOrderService();
-        orderService.order(orderNo);
+        orderService.order(orderNo); //주문
+        orderService.close(); //종료
     }
 }
