@@ -32,7 +32,7 @@ public class NewOrderService {
         }
 
         // 추가: 종료
-        es.close();
+        es.shutdown();
     }
 
     static class InventoryWork implements Callable<Boolean> {
